@@ -78,15 +78,18 @@ export function Home() {
       tamanhoArray4
     );
 
-    if (menor === pilhaDeContainer.lenght) {
+    if (menor === tamanhoArray1) {
       return alert("A pilha 1 e a menor");
     }
-    if (menor === pilhaDeContainer2.length) {
+    if (menor === tamanhoArray2) {
       return alert("a pilha 2 e a menor ");
     }
-    if (menor === pilhaDeContainer3.lenght) {
+    if (menor === tamanhoArray3) {
       return alert("a pilha 3 e a menor");
-    } else alert("a pilha 4 e a menor");
+    }
+    if (menor === tamanhoArray4) {
+      return alert("a pilha 4 e a menor");
+    }
   }
 
   return (
