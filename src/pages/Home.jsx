@@ -15,7 +15,7 @@ export function Home() {
 
       pilhaDeContainer.push({ id, numero });
     } else {
-      alert("Impossivel empilhar nesta Pilha de container !");
+      alert("Impossivel empilhar!");
     }
   }
 
@@ -26,7 +26,7 @@ export function Home() {
 
       pilhaDeContainer2.push({ id, numero });
     } else {
-      alert("Impossivel empilhar nesta Pilha de container !");
+      alert("Impossivel empilhar !");
     }
   }
 
@@ -37,7 +37,7 @@ export function Home() {
 
       pilhaDeContainer3.push({ id, numero });
     } else {
-      alert("Impossivel empilhar nesta Pilha de container !");
+      alert("Impossivel empilhar !");
     }
   }
 
@@ -48,7 +48,7 @@ export function Home() {
 
       pilhaDeContainer4.push({ id, numero });
     } else {
-      alert("Impossivel empilhar nesta Pilha de container !");
+      alert("Impossivel empilhar !");
     }
   }
 
@@ -65,7 +65,7 @@ export function Home() {
     );
   }
 
-  function VerificaTamanhoDePilha() {
+  function AdicionarContainerNaPilha() {
     let tamanhoArray1 = pilhaDeContainer.length;
     let tamanhoArray2 = pilhaDeContainer2.length;
     let tamanhoArray3 = pilhaDeContainer3.length;
@@ -79,16 +79,13 @@ export function Home() {
     );
 
     if (menor === tamanhoArray1) {
-      return alert("A pilha 1 e a menor");
-    }
-    if (menor === tamanhoArray2) {
-      return alert("a pilha 2 e a menor ");
-    }
-    if (menor === tamanhoArray3) {
-      return alert("a pilha 3 e a menor");
-    }
-    if (menor === tamanhoArray4) {
-      return alert("a pilha 4 e a menor");
+      AdicinarNoContainer();
+    } else if (menor === tamanhoArray2) {
+      AdicinarNoContainer2();
+    } else if (menor === tamanhoArray3) {
+      AdicinarNoContainer3();
+    } else if (menor === tamanhoArray4) {
+      AdicinarNoContainer4();
     }
   }
 
@@ -98,24 +95,12 @@ export function Home() {
         Listar pilha
       </button>
 
-      <button type="button" className="button" onClick={AdicinarNoContainer}>
-        Adicionar na pilha 1
-      </button>
-
-      <button type="button" className="button" onClick={AdicinarNoContainer2}>
-        Adicionar na pilha 2
-      </button>
-
-      <button type="button" className="button" onClick={AdicinarNoContainer3}>
-        Adicionar na pilha 3
-      </button>
-
-      <button type="button" className="button" onClick={AdicinarNoContainer4}>
-        Adicionar na pilha 4
-      </button>
-
-      <button type="button" className="button" onClick={VerificaTamanhoDePilha}>
-        Analisa Pilha Menor
+      <button
+        type="button"
+        className="button"
+        onClick={AdicionarContainerNaPilha}
+      >
+        Adicionar Container
       </button>
     </div>
   );
