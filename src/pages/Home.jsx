@@ -89,8 +89,25 @@ export function Home() {
     }
   }
 
+  // function removerContainerPorId() {
+
+  //   // if (pilhaDeContainer.indexOf(valorId) != -1) {
+  //   //   pilhaDeContainer.splice(pilhaDeContainer.indexOf(valorId), 1);
+  //   // } else if (pilhaDeContainer2.indexOf(valorId) != -1) {
+  //   //   pilhaDeContainer2.splice(pilhaDeContainer2.indexOf(valorId), 1);
+  //   // } else if (pilhaDeContainer3.indexOf(valorId) != -1) {
+  //   //   pilhaDeContainer3.splice(pilhaDeContainer3.indexOf(valorId), 1);
+  //   // } else if (pilhaDeContainer4.indexOf(valorId) != -1) {
+  //   //   pilhaDeContainer4.splice(pilhaDeContainer4.indexOf(valorId), 1);
+  //   // }
+  // }
+
   return (
     <div className="container">
+      {/* <button ype="button" className="button" onClick={removerContainerPorId}>
+        Remover
+      </button> */}
+
       <button type="button" className="button" onClick={listarPilha}>
         Listar pilha
       </button>
